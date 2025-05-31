@@ -16,7 +16,7 @@ import { LuChevronsUpDown } from "react-icons/lu";
 const CreatePage: React.FC = () => {
 
   const router = useRouter();
-  const { form, setForm, reset } = useInviteStore();
+  const { form, setForm } = useInviteStore();
 
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);

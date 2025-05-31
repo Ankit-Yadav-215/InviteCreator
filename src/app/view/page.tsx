@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useInviteStore, InviteResponse } from "../../store/inviteStore";
 import { useRouter } from "next/navigation";
 import { Player } from "@remotion/player";
@@ -8,7 +8,7 @@ import { InvitationVideo } from "../../remotion/Invitation/Main";
 const ViewPage: React.FC = () => {
   const { response, saveResponse } = useInviteStore();
   const router = useRouter();
-  const [isRendering, setIsRendering] = useState(false);
+  // const [isRendering, setIsRendering] = useState(false);
   
   useEffect(() => {
     if (!response) {
@@ -94,9 +94,9 @@ const ViewPage: React.FC = () => {
             <button
               className="mt-4 w-full py-3 bg-[#B7A6B7] text-[#522C52] rounded-lg font-semibold hover:bg-[#a48fa4] transition disabled:opacity-50"
               onClick={handleRenderVideo}
-              disabled={isRendering}
+              // disabled={isRendering}
             >
-              {isRendering ? "Rendering..." : "Download Video"}
+          
             </button>
           </div>
 
