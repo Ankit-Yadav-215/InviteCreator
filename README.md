@@ -21,6 +21,9 @@ This project is a modern web application for creating and sharing event invitati
 - **View Page:**  
   See a full preview of your invitation with all entered details and media.
 
+- **API Integration:**  
+  The inviattion created from the API data is rendered on a different page for now (`/api-view`).
+
 ---
 
 ## Getting Started
@@ -53,7 +56,8 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 1. Go to `/create` to start a new invitation.
 2. Fill in all event details, upload an image and a video theme.
 3. Click **Create** to save and preview your invitation on the `/view` page.
-4. You can download the uploaded video theme directly, but **rendering a custom video invitation is currently not available** (see below).
+4. **rendering a custom video invitation is currently not available** (see below).
+5. The page using the api data has been rendered separately on `/api-view` 
 
 ---
 
