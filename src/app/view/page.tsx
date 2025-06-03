@@ -96,7 +96,7 @@ const ViewPage: React.FC = () => {
               onClick={handleRenderVideo}
               // disabled={isRendering}
             >
-          
+            Download Video
             </button>
           </div>
 
